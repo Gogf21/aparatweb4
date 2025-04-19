@@ -242,7 +242,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         }
 
 def run_server():
-    server_address = ('', 800)
+    server_address = ('', 8000)
     httpd = HTTPServer(server_address, RequestHandler)
     print('Сервер запущен на порту 8000...')
     httpd.serve_forever()
